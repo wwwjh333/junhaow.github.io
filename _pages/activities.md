@@ -1,10 +1,10 @@
 ---
 layout: archive
 title: ""
-permalink: /publications/
+permalink: /activities/
 author_profile: Flase
 ---
 
-Publications
+Activities
 ======
 Coming soon!
