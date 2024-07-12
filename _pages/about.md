@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Junhao Wu's Homepage"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
