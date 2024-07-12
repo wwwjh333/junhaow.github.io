@@ -5,6 +5,6 @@ permalink: /publications/
 author_profile: Flase
 ---
 
-publications
+Publications
 ======
 Coming soon!
