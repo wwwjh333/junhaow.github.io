@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Junhao Wu's Homepage"
+title: "Junhao Wu's Home"
 author_profile: flase
 redirect_from: 
   - /about/
