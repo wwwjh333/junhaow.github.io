@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Junhao Wu's Homepage"
-author_profile: true
+author_profile: flase
 redirect_from: 
   - /about/
   - /about.html
