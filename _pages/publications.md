@@ -2,7 +2,7 @@
 layout: archive
 title: ""
 permalink: /publications/
-author_profile: Flase
+author_profile: true
 ---
 
 Publications
