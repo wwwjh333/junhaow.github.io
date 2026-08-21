@@ -6,6 +6,7 @@ baseurl: ""
 
 markdown: kramdown
 exclude:
+  - vendor
   - Gemfile
   - Gemfile.lock
   - LICENSE
