@@ -1,31 +1,32 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="en">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <title>{% if page.title and page.title != '' %}{{ page.title }} · {% endif %}{{ site.name }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}">
   </head>
-
   <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Junhao Wu, home">Junhao Wu</a>
+        <nav aria-label="Primary navigation">
+          <a{% if page.permalink == '/' %} class="active"{% endif %} href="{{ '/' | relative_url }}">Home</a>
+          <a{% if page.permalink == '/publications/' %} class="active"{% endif %} href="{{ '/publications/' | relative_url }}">Publications</a>
+          <a{% if page.permalink == '/experience/' %} class="active"{% endif %} href="{{ '/experience/' | relative_url }}">Experience</a>
+        </nav>
+      </div>
+    </header>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    <main id="content" class="page-shell">
+      {{ content }}
+    </main>
 
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
+    <footer>
+      <div>© {{ 'now' | date: '%Y' }} Junhao Wu</div>
+      <div>Built with curiosity and care.</div>
+    </footer>
   </body>
 </html>

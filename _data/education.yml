@@ -1,0 +1,30 @@
+- degree: Visiting Student
+  institution: Johns Hopkins University School of Medicine
+  location: Maryland, USA
+  date: 2025–2026
+  logo: "https://www.google.com/s2/favicons?domain=jhu.edu&sz=128"
+  logo_alt: Johns Hopkins University logo
+  logo_external: true
+
+- degree: Master of Science in Computer Science
+  institution: Towson University
+  location: Maryland, USA
+  date: 2024–2026
+  logo: /images/institutions/towson.png
+  logo_alt: Towson University logo
+
+- degree: Visiting Student
+  institution: Shenzhen Institute of Advanced Technology (SIAT)
+  location: Guangdong, China
+  date: 2023–2024
+  logo: "https://www.google.com/s2/favicons?domain=siat.ac.cn&sz=128"
+  logo_alt: Shenzhen Institute of Advanced Technology logo
+  logo_external: true
+
+- degree: Bachelor of Engineering in Artificial Intelligence
+  institution: Jinan University
+  location: Guangdong, China
+  date: 2020–2024
+  logo: "https://www.google.com/s2/favicons?domain=english.jnu.edu.cn&sz=128"
+  logo_alt: Jinan University logo
+  logo_external: true

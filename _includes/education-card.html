@@ -1,0 +1,14 @@
+{% assign education = include.education %}
+<article class="education-card">
+  {% if education.logo_external %}
+    <img class="education-logo" src="{{ education.logo | escape }}" alt="{{ education.logo_alt | escape }}">
+  {% else %}
+    <img class="education-logo" src="{{ education.logo | relative_url }}" alt="{{ education.logo_alt | escape }}">
+  {% endif %}
+  <div class="education-info">
+    <h2>{{ education.degree | escape }}</h2>
+    <p class="education-institution">{{ education.institution | escape }}</p>
+    <p class="education-location">{{ education.location | escape }}</p>
+  </div>
+  <div class="education-date">{{ education.date | escape }}</div>
+</article>

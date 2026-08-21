@@ -1,0 +1,50 @@
+- title: "Bal-DC LULC Atlas: Toward a Foundation Model for Ultra-High-Resolution Urban Land Cover Classification"
+  venue: "ACM SIGSPATIAL, 2026"
+  authors: '<span class="publication-me">Junhao Wu</span>, Aboagye-Ntow Stephen, Chuyuan Wang, Michael McGuire, Wei Yu, Jianwu Wang, Xin Huang'
+  image: /images/publications/bal-dc-thumb.png
+  image_alt: Bal-DC LULC Atlas framework overview
+  links:
+    - label: Code & Benchmark
+      url: https://wwwjh333.github.io/Bal_lulc_atlas/
+
+- title: "Score-Based Matching with Target Guidance for Cryo-EM Denoising"
+  venue: "European Conference on Computer Vision (ECCV), 2026"
+  authors: 'Xiaoqi Wu, Xueying Zhan, Wen Li, <span class="publication-me">Junhao Wu</span>, Xin Huang, Min Xu'
+  image: /images/publications/cryo-em-thumb.png
+  image_alt: Score-based matching framework for Cryo-EM denoising
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2604.17734
+    - label: Code
+      url: https://github.com/anonymous857142/Cryo_EM_Score_Based_Matching_with_Target
+
+- title: "Multimodal Medical Endoscopic Image Analysis via Progressive Disentangle-aware Contrastive Learning"
+  venue: "Medical Image Analysis, 2026"
+  authors: '<span class="publication-me">Junhao Wu</span>, Yun Li, Junhao Li, Jingliang Bian, Xiaomao Fan, Wenbin Lei, Ruxin Wang'
+  image: /images/publications/mm-endocl-thumb.png
+  image_alt: Progressive disentangle-aware contrastive learning framework
+  links:
+    - label: Paper
+      url: https://doi.org/10.1016/j.media.2026.104012
+    - label: Code
+      url: https://github.com/wwwjh333/MM-EndoCL
+
+- title: "Semi-MedSAM: Adapting SAM-assisted Semi-supervised Multi-modality Learning for Medical Endoscopic Image Segmentation"
+  venue: "Pattern Recognition, 2026"
+  authors: 'Junhao Li, Yun Li, <span class="publication-me">Junhao Wu</span>, Chaojie Ji, Zhijie Chen, Wenbin Lei, Ruxin Wang'
+  image: /images/publications/semi-medsam-thumb.png
+  image_alt: Semi-MedSAM student and teacher model framework
+  links:
+    - label: Paper
+      url: https://www.sciencedirect.com/science/article/pii/S0031320326001718
+    - label: Code
+      url: https://github.com/Li-a-junhao/Semi-Medsam
+
+- title: "Baltimore Atlas: FreqWeaver Adapter for Semi-supervised Ultra-high Spatial Resolution Land Cover Classification"
+  venue: "ACM SIGSPATIAL, 2025"
+  authors: '<span class="publication-me">Junhao Wu</span>, Stephen Aboagye-Ntow, Chuyuan Wang, Gang Chen, Xin Huang'
+  image: /images/publications/baltimore-atlas-thumb.png
+  image_alt: FreqWeaver semi-supervised land-cover classification framework
+  links:
+    - label: Paper
+      url: https://doi.org/10.1145/3748636.3762724

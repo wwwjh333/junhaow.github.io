@@ -1,0 +1,14 @@
+{% assign publication = include.publication %}
+<article class="publication">
+  <img class="publication-thumb" src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}">
+  <div class="publication-details">
+    <h2>{{ publication.title | escape }}</h2>
+    <p class="publication-venue">{{ publication.venue | escape }}</p>
+    <p class="publication-authors">{{ publication.authors }}</p>
+    <div class="publication-links">
+      {% for link in publication.links %}
+        <a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</article>
