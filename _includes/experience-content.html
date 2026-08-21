@@ -1,0 +1,34 @@
+<header class="education-header">
+  <h1>Education</h1>
+</header>
+
+<section class="education-list" aria-label="Education and visiting experience">
+  {% for education in site.data.education %}
+    {% include education-card.html education=education %}
+  {% endfor %}
+</section>
+
+<section class="service-section" aria-labelledby="academic-service-title">
+  <header class="service-header">
+    <h2 id="academic-service-title">Academic Service</h2>
+  </header>
+  <div class="service-card">
+    <ul class="service-list">
+      <li>
+        Conference reviewer for
+        <ul>
+          <li>International Conference on 3D Vision (3DV)</li>
+          <li>IEEE International Conference on Healthcare Informatics (ICHI)</li>
+        </ul>
+      </li>
+      <li>
+        Journal reviewer for
+        <ul>
+          <li>Medical Image Analysis</li>
+          <li>Scientific Reports</li>
+          <li>BioData Mining</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>

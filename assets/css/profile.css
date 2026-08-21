@@ -46,6 +46,9 @@ nav a:hover, nav a.active { color: var(--accent); }
 nav a.active::after { width: 18px; }
 
 .page-shell { max-width: var(--max); min-height: calc(100vh - 170px); margin: 0 auto; padding: 44px 0 96px; }
+.page-section { scroll-margin-top: 112px; }
+.single-page-section { margin-top: 96px; padding-top: 56px; border-top: 1px solid rgba(22, 24, 25, .22); }
+.single-page-section .publications-intro { padding-top: 0; }
 
 /* Home */
 .profile-hero { display: grid; grid-template-columns: 240px minmax(0, 1fr) 260px; align-items: start; gap: 48px; }
@@ -132,6 +135,8 @@ footer { display: flex; justify-content: space-between; max-width: var(--max); m
   nav { gap: 0; font-size: 9px; }
   nav a { padding: 7px 8px; }
   .page-shell { margin: 0 20px; padding: 42px 0 72px; }
+  .page-section { scroll-margin-top: 94px; }
+  .single-page-section { margin-top: 72px; padding-top: 42px; }
   .profile-hero { grid-template-columns: 120px 1fr; gap: 22px; }
   .portrait { width: 120px; height: 150px; }
   .profile-intro h1 { margin-bottom: 10px; font-size: clamp(35px, 10.5vw, 46px); white-space: normal; }
