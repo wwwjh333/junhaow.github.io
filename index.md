@@ -42,12 +42,3 @@ description: "Junhao Wu — multimodal learning, generative models, and scientif
     </ul>
   </div>
 </section>
-
-<section class="section about-section" aria-labelledby="recent-heading">
-  <h2 id="recent-heading">Recent</h2>
-  <div class="about-copy">
-    <p><strong>January 2026</strong> — “Semi-MedSAM” was accepted by <em>Pattern Recognition</em>.</p>
-    <p><strong>October 2025</strong> — Invited to serve as a reviewer for 3DV 2026.</p>
-    <p><strong>August 2025</strong> — “Baltimore Atlas” was accepted by ACM SIGSPATIAL 2025.</p>
-  </div>
-</section>
