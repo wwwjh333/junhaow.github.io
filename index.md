@@ -6,7 +6,7 @@ description: "Junhao Wu — multimodal learning, generative models, and scientif
 ---
 
 <section class="profile-hero" aria-labelledby="home-title">
-  <img class="portrait" src="{{ '/images/profile-desert-crop.jpeg' | relative_url }}" alt="Junhao Wu in the White Sands desert">
+  <img class="portrait" src="{{ '/images/profile-austin-dog.jpeg' | relative_url }}" alt="Junhao Wu with a dog in front of the Austin skyline">
 
   <div class="profile-intro">
     <h1 id="home-title">Junhao Wu</h1>
