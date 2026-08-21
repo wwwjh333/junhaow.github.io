@@ -1,5 +1,5 @@
 :root {
-  --paper: #fafaf8;
+  --paper: #fff;
   --ink: #1c1d1d;
   --muted: #686f71;
   --line: rgba(22, 24, 25, 0.035);
@@ -15,10 +15,6 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
-  background-size: 64px 64px;
   font: 16px/1.65 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
@@ -34,7 +30,7 @@ a:hover { color: var(--accent); }
   top: 0;
   z-index: 5;
   border-bottom: 1px solid rgba(22, 24, 25, .07);
-  background: rgba(250, 250, 248, .92);
+  background: rgba(255, 255, 255, .92);
   backdrop-filter: blur(14px);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; max-width: var(--max); min-height: 86px; margin: 0 auto; gap: 28px; }
@@ -60,7 +56,7 @@ nav a.active::after { width: 18px; }
 
 /* Home */
 .profile-hero { display: grid; grid-template-columns: 240px minmax(0, 1fr) 260px; align-items: start; gap: 48px; }
-.portrait { width: 240px; height: 298px; border: 1px solid rgba(22, 24, 25, .08); object-fit: cover; object-position: center; }
+.portrait { width: 240px; height: auto; border: 1px solid rgba(22, 24, 25, .08); }
 .profile-intro { padding-top: 2px; }
 .profile-intro h1 { margin: 0 0 22px; font-size: clamp(54px, 6vw, 72px); line-height: .95; letter-spacing: -.06em; white-space: nowrap; }
 .role { margin: 0 0 2px; font-size: 24px; line-height: 1.35; font-weight: 500; }
@@ -86,7 +82,8 @@ nav a.active::after { width: 18px; }
 .publication-list { margin-top: 38px; }
 .publication { display: grid; grid-template-columns: 210px minmax(0, 1fr); min-height: 158px; padding: 16px; gap: 18px; border: 1px solid rgba(22, 24, 25, .1); border-radius: 5px; background: rgba(255, 255, 255, .56); }
 .publication + .publication { margin-top: 2px; }
-.publication-thumb { width: 210px; height: 96px; margin-top: 1px; border: 1px solid rgba(22, 24, 25, .08); border-radius: 3px; background: #f3f4f3; filter: saturate(.88) contrast(.98); object-fit: cover; object-position: center; }
+.publication-figure { width: 210px; height: 96px; margin-top: 1px; overflow: hidden; border: 1px solid rgba(22, 24, 25, .08); border-radius: 3px; background: #f3f4f3; }
+.publication-thumb { width: 100%; height: 100%; filter: saturate(.88) contrast(.98); object-fit: cover; object-position: center; transform: scale(1); transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%); }
 .publication-details { min-width: 0; }
 .publication h2 { max-width: none; margin: 0 0 3px; font: 700 20px/1.3 Georgia, serif; letter-spacing: -.015em; }
 .publication-venue { margin: 0 0 9px; color: var(--muted); font-size: 15px; font-style: italic; font-weight: 400; }
@@ -117,9 +114,14 @@ nav a.active::after { width: 18px; }
 footer { display: flex; justify-content: space-between; max-width: var(--max); margin: 0 auto; padding: 25px 0 38px; border-top: 1px solid var(--line); color: var(--muted); font: 11px/1.5 ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
 
 @media (prefers-reduced-motion: no-preference) {
-  a, nav a::after, .publication, .publication-thumb, .education-card, .service-card { transition: color .18s ease, border-color .18s ease, background-color .18s ease, filter .18s ease; }
+  a, nav a::after, .publication, .publication-thumb, .education-card, .service-card { transition: color .18s ease, border-color .18s ease, background-color .18s ease, filter .18s ease, transform .18s ease; }
   .publication:hover, .education-card:hover, .service-card:hover { border-color: rgba(22, 24, 25, .18); background: rgba(255, 255, 255, .72); }
   .publication:hover .publication-thumb { filter: saturate(1) contrast(1); }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .publication-figure { cursor: zoom-in; }
+  .publication-figure:hover .publication-thumb { transform: scale(4); }
 }
 
 @media (max-width: 1180px) {
@@ -128,13 +130,12 @@ footer { display: flex; justify-content: space-between; max-width: var(--max); m
 
 @media (max-width: 980px) {
   .profile-hero { grid-template-columns: 210px 1fr; gap: 36px; }
-  .portrait { width: 210px; height: 262px; }
+  .portrait { width: 210px; }
   .profile-meta { grid-column: 1 / -1; display: grid; grid-template-columns: 210px 1fr; gap: 36px; padding-top: 0; }
   .contact-links { align-content: start; margin-top: 0; }
 }
 
 @media (max-width: 760px) {
-  body { background-size: 32px 32px; }
   .header-inner { min-height: 74px; margin: 0 18px; }
   nav { gap: 0; font-size: 9px; }
   nav a { padding: 7px 8px; }
@@ -142,7 +143,7 @@ footer { display: flex; justify-content: space-between; max-width: var(--max); m
   .page-section { scroll-margin-top: 94px; }
   .single-page-section { margin-top: 72px; padding-top: 42px; }
   .profile-hero { grid-template-columns: 120px 1fr; gap: 22px; }
-  .portrait { width: 120px; height: 150px; }
+  .portrait { width: 120px; }
   .profile-intro h1 { margin-bottom: 10px; font-size: clamp(35px, 10.5vw, 46px); white-space: normal; }
   .role { font-size: 17px; }
   .opportunity { margin-bottom: 12px; font-size: 14px; line-height: 1.4; }
@@ -157,7 +158,7 @@ footer { display: flex; justify-content: space-between; max-width: var(--max); m
   .publications-intro .page-title { margin-bottom: 20px; }
   .publication-list { margin-top: 28px; }
   .publication { grid-template-columns: 1fr; gap: 14px; padding: 14px; }
-  .publication-thumb { width: 100%; height: 170px; margin: 0; }
+  .publication-figure { width: 100%; height: 170px; margin: 0; }
   .publication h2 { font-size: 21px; }
   .education-card { grid-template-columns: 44px minmax(0, 1fr); gap: 12px 15px; padding: 15px; }
   .education-date { grid-column: 2; padding-left: 0; color: var(--muted); }

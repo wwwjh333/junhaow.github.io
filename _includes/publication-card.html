@@ -1,6 +1,8 @@
 {% assign publication = include.publication %}
 <article class="publication">
-  <img class="publication-thumb" src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}">
+  <div class="publication-figure">
+    <img class="publication-thumb" src="{{ publication.image | relative_url }}" alt="{{ publication.image_alt | escape }}">
+  </div>
   <div class="publication-details">
     <h2>{{ publication.title | escape }}</h2>
     <p class="publication-venue">{{ publication.venue | escape }}</p>

@@ -1,7 +1,7 @@
 - title: "Bal-DC LULC Atlas: Toward a Foundation Model for Ultra-High-Resolution Urban Land Cover Classification"
   venue: "ACM SIGSPATIAL, 2026"
   authors: '<span class="publication-me">Junhao Wu</span>, Aboagye-Ntow Stephen, Chuyuan Wang, Michael McGuire, Wei Yu, Jianwu Wang, Xin Huang'
-  image: /images/publications/bal-dc-thumb.png
+  image: /images/publications/bal-dc-framework.jpg
   image_alt: Bal-DC LULC Atlas framework overview
   links:
     - label: Code & Benchmark
@@ -10,7 +10,7 @@
 - title: "Score-Based Matching with Target Guidance for Cryo-EM Denoising"
   venue: "European Conference on Computer Vision (ECCV), 2026"
   authors: 'Xiaoqi Wu, Xueying Zhan, Wen Li, <span class="publication-me">Junhao Wu</span>, Xin Huang, Min Xu'
-  image: /images/publications/cryo-em-thumb.png
+  image: /images/publications/cryo-em-framework.jpg
   image_alt: Score-based matching framework for Cryo-EM denoising
   links:
     - label: arXiv
@@ -21,7 +21,7 @@
 - title: "Multimodal Medical Endoscopic Image Analysis via Progressive Disentangle-aware Contrastive Learning"
   venue: "Medical Image Analysis, 2026"
   authors: '<span class="publication-me">Junhao Wu</span>, Yun Li, Junhao Li, Jingliang Bian, Xiaomao Fan, Wenbin Lei, Ruxin Wang'
-  image: /images/publications/mm-endocl-thumb.png
+  image: /images/publications/mm-endocl-overview.jpg
   image_alt: Progressive disentangle-aware contrastive learning framework
   links:
     - label: Paper
@@ -43,7 +43,7 @@
 - title: "Baltimore Atlas: FreqWeaver Adapter for Semi-supervised Ultra-high Spatial Resolution Land Cover Classification"
   venue: "ACM SIGSPATIAL, 2025"
   authors: '<span class="publication-me">Junhao Wu</span>, Stephen Aboagye-Ntow, Chuyuan Wang, Gang Chen, Xin Huang'
-  image: /images/publications/baltimore-atlas-thumb.png
+  image: /images/publications/baltimore-atlas-framework.jpg
   image_alt: FreqWeaver semi-supervised land-cover classification framework
   links:
     - label: Paper
