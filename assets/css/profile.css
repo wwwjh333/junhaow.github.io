@@ -49,6 +49,14 @@ nav a.active::after { width: 18px; }
 .page-section { scroll-margin-top: 112px; }
 .single-page-section { margin-top: 96px; padding-top: 56px; border-top: 1px solid rgba(22, 24, 25, .22); }
 .single-page-section .publications-intro { padding-top: 0; }
+.about-section > h2,
+.publications-intro .page-title,
+.education-header h1,
+.service-header h2 { position: relative; max-width: none; margin: 0; padding-bottom: 12px; border-bottom: 1px solid rgba(22, 24, 25, .16); font: 700 36px/1.15 Georgia, serif; letter-spacing: -.025em; }
+.about-section > h2::after,
+.publications-intro .page-title::after,
+.education-header h1::after,
+.service-header h2::after { content: ""; position: absolute; bottom: -1px; left: 0; width: 56px; height: 1px; background: var(--accent); }
 
 /* Home */
 .profile-hero { display: grid; grid-template-columns: 240px minmax(0, 1fr) 260px; align-items: start; gap: 48px; }
@@ -65,8 +73,6 @@ nav a.active::after { width: 18px; }
 .contact-links a { width: fit-content; color: var(--blue); font-size: 16px; }
 .contact-links a:hover { color: var(--accent); }
 .section { margin-top: 58px; padding-top: 24px; border-top: 1px solid rgba(22, 24, 25, .22); }
-.about-section > h2 { margin: 0; padding-bottom: 9px; border-bottom: 1px solid rgba(22, 24, 25, .16); font: 700 34px/1.08 Georgia, serif; letter-spacing: -.025em; }
-.about-section > h2::after { content: ""; display: block; width: 56px; height: 1px; margin-top: 9px; background: var(--accent); }
 .about-copy { padding-top: 15px; font-size: 16px; line-height: 1.8; }
 .about-copy p { margin: 0 0 14px; }
 .interests { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 0; padding: 0; list-style: none; }
@@ -74,7 +80,7 @@ nav a.active::after { width: 18px; }
 
 /* Publications */
 .publications-intro { display: block; padding: 14px 0 38px; border-bottom: 1px solid rgba(22, 24, 25, .22); }
-.publications-intro .page-title { max-width: none; margin: 0 0 28px; padding-bottom: 22px; border-bottom: 1px solid rgba(22, 24, 25, .16); font: 700 clamp(50px, 6vw, 70px)/1.08 Georgia, serif; letter-spacing: -.045em; }
+.publications-intro .page-title { margin-bottom: 28px; }
 .publications-intro p { max-width: none; margin: 0; color: var(--ink); font-size: 16px; }
 .publications-intro a { color: var(--accent); }
 .publication-list { margin-top: 38px; }
@@ -92,8 +98,6 @@ nav a.active::after { width: 18px; }
 .publication-links a:hover { border-color: #7e9bb1; background: var(--soft-blue); }
 
 /* Experience */
-.education-header h1, .service-header h2 { max-width: none; margin: 0; padding-bottom: 9px; border-bottom: 1px solid rgba(22, 24, 25, .16); font: 700 36px/1.15 Georgia, serif; letter-spacing: -.025em; }
-.education-header h1::after, .service-header h2::after { content: ""; display: block; width: 56px; height: 1px; margin-top: 9px; background: var(--accent); transform: translateY(10px); }
 .education-list { display: grid; gap: 12px; margin-top: 22px; }
 .education-card { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto; align-items: center; min-height: 98px; padding: 15px 24px; gap: 18px; border: 1px solid rgba(22, 24, 25, .09); border-radius: 5px; background: rgba(255, 255, 255, .54); }
 .education-logo { width: 44px; height: 44px; padding: 4px; border: 1px solid rgba(22, 24, 25, .1); border-radius: 5px; background: rgba(255, 255, 255, .82); object-fit: contain; }
@@ -149,7 +153,8 @@ footer { display: flex; justify-content: space-between; max-width: var(--max); m
   .contact-links a { font-size: 14px; }
   .section { margin-top: 64px; }
   .publications-intro { padding-top: 0; }
-  .publications-intro .page-title { margin-bottom: 20px; font-size: clamp(42px, 13vw, 58px); }
+  .about-section > h2, .publications-intro .page-title, .education-header h1, .service-header h2 { font-size: 34px; }
+  .publications-intro .page-title { margin-bottom: 20px; }
   .publication-list { margin-top: 28px; }
   .publication { grid-template-columns: 1fr; gap: 14px; padding: 14px; }
   .publication-thumb { width: 100%; height: 170px; margin: 0; }
